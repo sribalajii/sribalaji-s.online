@@ -132,8 +132,6 @@ function Index() {
           </div>
           <div className="flex justify-center lg:justify-end">
             <div className="pf-avatar-3d">
-              <span className="pf-orbit pf-orbit-1" aria-hidden />
-              <span className="pf-orbit pf-orbit-2" aria-hidden />
               <span className="pf-halo" aria-hidden />
               <div className="pf-ring-avatar">
                 <div className="pf-avatar-inner">
