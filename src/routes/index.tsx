@@ -279,7 +279,7 @@ function Index() {
       {/* FOOTER */}
       <footer className="mt-20 border-t border-white/10">
         <div className="max-w-7xl mx-auto px-5 sm:px-8 py-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-[var(--pf-muted)]">
-          <p>© 2026 <span className="text-white">Sribalaji I</span>. All rights reserved.</p>
+          <p><span className="text-white">SriBalaji.i</span></p>
           <div className="flex items-center gap-5">
             {NAV.map(n => (
               <button key={n.id} onClick={() => go(n.id)} className="hover:text-white transition">{n.label}</button>
