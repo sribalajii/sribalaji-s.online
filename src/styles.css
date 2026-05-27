@@ -185,9 +185,90 @@ body.portfolio {
   color: #b9d2ff; font-size: .8rem;
 }
 
+.pf-avatar-3d {
+  position: relative;
+  width: 20rem; height: 20rem;
+  display: flex; align-items: center; justify-content: center;
+  perspective: 1000px;
+}
+@media (max-width: 640px) {
+  .pf-avatar-3d { width: 16rem; height: 16rem; }
+}
 .pf-ring-avatar {
-  background: conic-gradient(from 0deg, var(--pf-cyan), var(--pf-blue), var(--pf-cyan));
-  padding: 4px; border-radius: 1.5rem;
+  position: relative;
+  width: 100%; height: 100%;
+  border-radius: 9999px;
+  padding: 4px;
+  background: conic-gradient(from 0deg, var(--pf-cyan), var(--pf-blue), #a855f7, var(--pf-cyan));
+  box-shadow:
+    0 0 60px -10px var(--pf-cyan),
+    0 25px 50px -12px rgba(0,0,0,.6),
+    inset 0 0 20px rgba(42,127,255,.3);
+  animation: pf-spin 12s linear infinite;
+  transform-style: preserve-3d;
+  transition: transform .6s ease;
+}
+.pf-avatar-3d:hover .pf-ring-avatar {
+  transform: rotateY(8deg) rotateX(-6deg) scale(1.03);
+}
+.pf-avatar-inner {
+  position: relative;
+  width: 100%; height: 100%;
+  border-radius: 9999px;
+  overflow: hidden;
+  background: #0a0f1f;
+  animation: pf-spin-reverse 12s linear infinite;
+}
+.pf-avatar-img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  border-radius: 9999px;
+  display: block;
+}
+.pf-avatar-shine {
+  position: absolute; inset: 0;
+  border-radius: 9999px;
+  background: linear-gradient(135deg, rgba(255,255,255,.18) 0%, transparent 40%, transparent 60%, rgba(42,127,255,.15) 100%);
+  pointer-events: none;
+  mix-blend-mode: overlay;
+}
+.pf-halo {
+  position: absolute; inset: -20px;
+  border-radius: 9999px;
+  background: radial-gradient(circle, rgba(42,127,255,.35), transparent 65%);
+  filter: blur(30px);
+  pointer-events: none;
+  animation: pf-pulse 4s ease-in-out infinite;
+}
+.pf-orbit {
+  position: absolute;
+  border-radius: 9999px;
+  border: 1px dashed rgba(120,180,255,.25);
+  pointer-events: none;
+}
+.pf-orbit-1 {
+  inset: -18px;
+  animation: pf-spin 22s linear infinite;
+}
+.pf-orbit-2 {
+  inset: -36px;
+  border-style: solid;
+  border-color: rgba(168,85,247,.15);
+  animation: pf-spin-reverse 30s linear infinite;
+}
+.pf-orbit-1::before, .pf-orbit-2::before {
+  content: ""; position: absolute; top: -4px; left: 50%;
+  width: 8px; height: 8px; border-radius: 9999px;
+  background: var(--pf-cyan);
+  box-shadow: 0 0 12px var(--pf-cyan);
+  transform: translateX(-50%);
+}
+.pf-orbit-2::before { background: #a855f7; box-shadow: 0 0 12px #a855f7; }
+@keyframes pf-spin { to { transform: rotate(360deg); } }
+@keyframes pf-spin-reverse { to { transform: rotate(-360deg); } }
+@keyframes pf-pulse {
+  0%,100% { opacity: .6; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.08); }
 }
 
 @keyframes pf-blink { 50% { opacity: 0; } }
