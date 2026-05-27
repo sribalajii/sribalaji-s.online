@@ -27,7 +27,7 @@ const NAV = [
   { id: "contact", label: "Contact" },
 ];
 
-const TYPING = ["Full Stack Developer", "AI/ML Enthusiast", "Python Engineer", "Problem Solver"];
+const TYPING = ["Full Stack Developer", "AI/ML Enthusiast", "Python Developer"];
 
 function useTyping(words: string[]) {
   const [text, setText] = useState("");
