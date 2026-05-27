@@ -255,7 +255,7 @@ function Index() {
         <Section id="contact" eyebrow="Get in Touch" title="Let's build something together">
           <div className="grid lg:grid-cols-2 gap-6">
             <div className="pf-card p-6 space-y-4">
-              <ContactRow icon={<Phone />} label="Phone" value="+1-951-9585144178" href="tel:+19519585144178" />
+              <ContactRow icon={<Phone />} label="Phone" value="+919585144178" href="tel:+919585144178" />
               <ContactRow icon={<Mail />} label="Email" value="isribalajj335@gmail.com" href="mailto:isribalajj335@gmail.com" />
               <ContactRow icon={<Github />} label="GitHub" value="github.com/sribalajji" href="https://github.com/sribalajji" />
               <ContactRow icon={<Linkedin />} label="LinkedIn" value="linkedin.com/in/sribalajj-i" href="https://linkedin.com/in/sribalajj-i" />
