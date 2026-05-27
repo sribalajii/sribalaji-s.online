@@ -106,8 +106,8 @@ function Index() {
         <section id="home" className="min-h-[88vh] grid lg:grid-cols-2 gap-10 items-center py-12">
           <div>
             <span className="pf-chip"><Sparkles size={14} /> Available for new projects</span>
-            <h1 className="mt-5 text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight tracking-tight text-justify">
-              Hi, I'm <span className="pf-gradient-text">Sribalaji I</span>
+            <h1 className="mt-5 text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight tracking-tight">
+              Hi, I'm <span className="pf-gradient-text whitespace-nowrap">Sribalaji&nbsp;I</span>
             </h1>
             <p className="mt-4 text-xl sm:text-2xl text-[var(--pf-muted)] font-medium">
               {typed}
@@ -138,7 +138,7 @@ function Index() {
                   alt="Sribalaji I, Full Stack Developer"
                   width={1024}
                   height={1024}
-                  className="w-64 h-64 sm:w-80 sm:h-80 rounded-full object-cover bg-[#0a0f1f]"
+                  className="w-64 h-80 sm:w-80 sm:h-96 rounded-3xl object-cover bg-[#0a0f1f]"
                 />
               </div>
               <div className="absolute -bottom-4 -left-4 pf-glass rounded-2xl px-4 py-3 text-sm">
