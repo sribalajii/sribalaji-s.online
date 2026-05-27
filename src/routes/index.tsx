@@ -131,15 +131,21 @@ function Index() {
             </div>
           </div>
           <div className="flex justify-center lg:justify-end">
-            <div className="relative">
+            <div className="pf-avatar-3d">
+              <span className="pf-orbit pf-orbit-1" aria-hidden />
+              <span className="pf-orbit pf-orbit-2" aria-hidden />
+              <span className="pf-halo" aria-hidden />
               <div className="pf-ring-avatar">
-                <img
-                  src={profileImg}
-                  alt="Sribalaji I, Full Stack Developer"
-                  width={1024}
-                  height={1024}
-                  className="w-64 h-80 sm:w-80 sm:h-96 rounded-3xl object-cover bg-[#0a0f1f]"
-                />
+                <div className="pf-avatar-inner">
+                  <img
+                    src={profileImg}
+                    alt="Sribalaji I, Full Stack Developer"
+                    width={1024}
+                    height={1024}
+                    className="pf-avatar-img"
+                  />
+                  <span className="pf-avatar-shine" aria-hidden />
+                </div>
               </div>
             </div>
           </div>
