@@ -176,8 +176,8 @@ function Index() {
                   <div className="text-xs mt-1">2026 – Present · Python, SQL, Web Development, industry-level coding practices.</div>
                 </li>
                 <li className="pf-glass rounded-xl p-4">
-                  <div className="text-white font-medium">Bachelor's — Pursuing / Equivalent Experience</div>
-                  <div className="text-xs mt-1">Self-taught full stack &amp; AI/ML through projects and online study.</div>
+                  <div className="text-white font-medium">Bachelor's Degree at Electronics and Communication Engineering</div>
+                  <div className="text-xs mt-1">​Park College Of Engineering And Technology - 2026</div>
                 </li>
               </ul>
             </div>
