@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
+import BlackHolePortrait from "@/components/BlackHolePortrait";
 import {
   Menu, X, Github, Linkedin, Mail, Phone, MapPin, ArrowRight, ArrowUp,
   Code2, Database, Cpu, Wrench, Sparkles, Users, ExternalLink, Send,
@@ -131,22 +132,11 @@ function Index() {
             </div>
           </div>
           <div className="flex justify-center lg:justify-end">
-            <div className="pf-avatar-3d">
-              <span className="pf-halo" aria-hidden />
-              <div className="pf-ring-avatar">
-                <div className="pf-avatar-inner">
-                  <img
-                    src={profileImg}
-                    alt="Sribalaji I, Full Stack Developer"
-                    width={1024}
-                    height={1024}
-                    className="pf-avatar-img"
-                  />
-                  <span className="pf-avatar-shine" aria-hidden />
-                </div>
-              </div>
+            <div className="relative w-full max-w-[560px] aspect-square rounded-2xl overflow-hidden ring-1 ring-white/10 shadow-[0_30px_80px_-20px_rgba(0,224,255,0.35)]">
+              <BlackHolePortrait src={profileImg} className="absolute inset-0 w-full h-full" />
             </div>
           </div>
+
           <div className="lg:col-span-2 flex justify-center mt-4">
             <button onClick={() => go("about")} aria-label="Scroll down" className="text-[var(--pf-muted)] animate-bounce">
               <ChevronDown />
