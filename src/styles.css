@@ -223,9 +223,7 @@ body.portfolio {
 .pf-ring-avatar {
   background: conic-gradient(from 0deg, var(--pf-cyan), var(--pf-blue), var(--pf-cyan));
   padding: 4px; border-radius: 9999px;
-  animation: pf-spin 8s linear infinite;
 }
-@keyframes pf-spin { to { transform: rotate(360deg); } }
 
 @keyframes pf-blink { 50% { opacity: 0; } }
 .pf-caret { display: inline-block; width: 2px; background: var(--pf-cyan); margin-left: 4px; animation: pf-blink 1s steps(1) infinite; }
