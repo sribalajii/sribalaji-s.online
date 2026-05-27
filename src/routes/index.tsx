@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
+import BlackHolePortrait from "@/components/BlackHolePortrait";
 import {
   Menu, X, Github, Linkedin, Mail, Phone, MapPin, ArrowRight, ArrowUp,
   Code2, Database, Cpu, Wrench, Sparkles, Users, ExternalLink, Send,
