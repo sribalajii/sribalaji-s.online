@@ -5,7 +5,7 @@ import {
   Code2, Database, Cpu, Wrench, Sparkles, Users, ExternalLink, Send,
   Globe, Bot, Plug, ChevronDown,
 } from "lucide-react";
-import profileImg from "@/assets/profile.jpg";
+const profileImg = "https://i.postimg.cc/JnnkjD7n/Whats-App-Image-2026-03-27-at-6-35-47-PM.jpg";
 
 export const Route = createFileRoute("/")({
   component: Index,
