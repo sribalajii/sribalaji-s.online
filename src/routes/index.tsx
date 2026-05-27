@@ -141,14 +141,6 @@ function Index() {
                   className="w-64 h-80 sm:w-80 sm:h-96 rounded-3xl object-cover bg-[#0a0f1f]"
                 />
               </div>
-              <div className="absolute -bottom-4 -left-4 pf-glass rounded-2xl px-4 py-3 text-sm">
-                <div className="text-[var(--pf-cyan)] font-bold">3+</div>
-                <div className="text-[var(--pf-muted)] text-xs">AI Projects Shipped</div>
-              </div>
-              <div className="absolute -top-4 -right-4 pf-glass rounded-2xl px-4 py-3 text-sm">
-                <div className="text-[var(--pf-cyan)] font-bold">600+</div>
-                <div className="text-[var(--pf-muted)] text-xs">Curated Entries</div>
-              </div>
             </div>
           </div>
           <div className="lg:col-span-2 flex justify-center mt-4">
