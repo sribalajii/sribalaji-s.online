@@ -259,11 +259,16 @@ function Index() {
             </div>
             <form
               className="pf-card p-6 space-y-4"
-              onSubmit={(e) => { e.preventDefault(); alert("Thanks! Hook this form up to Formspree or EmailJS."); }}
+              action="https://formsubmit.co/isribalajj335@gmail.com"
+              method="POST"
             >
-              <Field label="Name"><input required type="text" className="pf-input" placeholder="Your name" /></Field>
-              <Field label="Email"><input required type="email" className="pf-input" placeholder="you@example.com" /></Field>
-              <Field label="Message"><textarea required rows={5} className="pf-input resize-none" placeholder="Tell me about your project..." /></Field>
+              <input type="hidden" name="_subject" value="New Portfolio Contact" />
+              <input type="hidden" name="_template" value="box" />
+              <input type="hidden" name="_captcha" value="false" />
+              <input type="text" name="_honey" style={{ display: "none" }} />
+              <Field label="Name"><input required type="text" name="name" className="pf-input" placeholder="Your name" /></Field>
+              <Field label="Email"><input required type="email" name="email" className="pf-input" placeholder="you@example.com" /></Field>
+              <Field label="Message"><textarea required name="message" rows={5} className="pf-input resize-none" placeholder="Tell me about your project..." /></Field>
               <button type="submit" className="pf-btn-primary inline-flex items-center gap-2 w-full justify-center">
                 Send Message <Send size={16} />
               </button>
