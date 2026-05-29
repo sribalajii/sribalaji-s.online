@@ -51,7 +51,32 @@ function useTyping(words: string[]) {
 function Index() {
   const [open, setOpen] = useState(false);
   const [showTop, setShowTop] = useState(false);
+  const [sending, setSending] = useState(false);
+  const [sendStatus, setSendStatus] = useState<null | "success" | "error">(null);
+  const formRef = useRef<HTMLFormElement>(null);
   const typed = useTyping(TYPING);
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    if (!formRef.current) return;
+    setSending(true);
+    setSendStatus(null);
+    try {
+      await emailjs.sendForm(
+        "service_4gewa9e",
+        "template_z70ouqq",
+        formRef.current,
+        { publicKey: "mg0DQtHwzxTLyj_qc" }
+      );
+      setSendStatus("success");
+      formRef.current.reset();
+    } catch (err) {
+      console.error("EmailJS error:", err);
+      setSendStatus("error");
+    } finally {
+      setSending(false);
+    }
+  };
 
   useEffect(() => {
     document.body.classList.add("portfolio");
