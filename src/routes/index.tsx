@@ -64,7 +64,7 @@ function Index() {
     try {
       await emailjs.sendForm(
         "service_4gewa9e",
-        "template_z70ouqq",
+        "template_t0uqdlk",
         formRef.current,
         { publicKey: "mg0DQtHwzxTLyj_qc" }
       );
