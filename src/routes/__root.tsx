@@ -72,14 +72,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
+      { title: "SriBalaji | Python Developer Portfolio" },
+      { name: "description", content: "Python Developer portfolio showcasing projects, skills, certifications, and contact information." },
       { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { property: "og:title", content: "SriBalaji | Python Developer Portfolio" },
+      { property: "og:description", content: "Python Developer portfolio showcasing projects, skills, certifications, and contact information." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "SriBalaji | Python Developer Portfolio" },
+      { name: "twitter:description", content: "Python Developer portfolio showcasing projects, skills, certifications, and contact information." },
+      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/fa42e9f5-4ab9-43a7-9135-1656dc74ce09" },
+      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/fa42e9f5-4ab9-43a7-9135-1656dc74ce09" },
     ],
     links: [
       {
